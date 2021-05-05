@@ -35,6 +35,7 @@
         <h3> Organizer </h3>
         <p><a href="https://www.csl.cornell.edu/~zhiruz/">Zhiru Zhang</a> (Cornell University)<p>
       </div>
+      <!--
       <div class="row">
         <h3> Speakers </h3>
         <ul class="list-group list-group-flush">
@@ -45,39 +46,41 @@
           <li class="list-group-item"><a href="https://www.csl.cornell.edu/~xiangs/">Shaojie Xiang</a> (Cornell University)</li>
         </ul>
       </div>
+      -->
       <div class="row mt-4">
         <h3> Overview </h3>
         <p>Recent years have seen a growing number of application-specific systolic arrays (SAs) implemented on modern FPGAs for efficient compute acceleration. The characteristics of near-neighbor connections make SAs a great match for FPGAs, where it is particularly important to minimize long interconnects to meet the target clock frequency. However, it requires a tremendous amount of human effort to design and implement a high-performance SA for a given algorithm using the traditional RTL-based methodology. On the other hand, existing high-level synthesis (HLS) tools force the programmers to do “micro-coding” where many optimizations must be carried out through tedious code restructuring and/or insertion of vendor-specific pragmas. In this tutorial, we introduce our recent efforts on developing new programming models and automatic synthesis capabilities that enable FPGA programmers to productively build high-performance SAs.</p>
       </div>
       <div class="row">
         <h3> Schedule </h3>
+        <p>Each segmant includes a technical presentation (30-35 mins) followed by a short demo and Q&A (5-10 mins).</p>
         <table class="table table-hover">
           <thead class="table-light">
             <tr>
-              <th>Time</th>
-              <th>Title</th>
+              <th></th>
               <th>Speakers</th>
               <th>Resources</th>
+              <th>Abstract</th>
             </tr>
           </thread>
           <tbody>
             <tr>
-              <th></th>
-              <td>AutoSA</td>
-              <td>Jason Cong, Jie Wang</td>
-              <td></td>
+              <th>Segment 1</th>
+              <td><a href="https://vast.cs.ucla.edu/people/faculty/jason-cong">Jason Cong</a>, <a href="https://cadlab.cs.ucla.edu/~jaywang/">Jie Wang</a> (UCLA)</td>
+              <td>Slides Vedio</td>
+              <td>AutoSA [FPGA’21], an end-to-end compilation framework for generating systolic arrays on FPGA. AutoSA is based on the polyhedral framework, and further incorporates a set of optimizations on different dimensions to boost performance.  As an example, we also show how AutoSA is used in an end-to-end deep learning acceleration framework FlexCNN [FPGA’2020].</td>
             </tr>
             <tr>
-              <th></th>
-              <td>T2S/SuSy</td>
-              <td>Hongbo Rong</td>
-              <td></td>
+              <th>Segment 2</th>
+              <td><a href="https://www.intel.com/content/www/us/en/artificial-intelligence/bios/hongbo-rong.html">Hongbo Rong</a> (Intel Labs)</td>
+              <td>Slides Vedio</td>
+              <td>T2S/SuSy [FCCM’19, ICCAD’20], a programming framework built upon Halide for productively building high-performance SAs on FPGAs. T2S decouples the algorithm specification from spatial optimizations, where the former can concisely express any systolic algorithm while the latter can describe essential optimizations for systolic arrays.</td>
             </tr>
-                        <tr>
-              <th></th>
-              <td>HeteorCL</td>
-              <td>Yi-Hsiang Lai, Shaojie Xiang</td>
-              <td></td>
+            <tr>
+              <th>Segment 3</th>
+              <td><a href="https://www.csl.cornell.edu/~yl2666/">Yi-Hsiang Lai</a>, <a href="https://www.csl.cornell.edu/~xiangs/">Shaojie Xiang</a> (Cornell University)</td>
+              <td>Slides Vedio</td>
+              <td>HeteroCL [FPGA’19], a Python-based DSL and an automated compilation flow that maps the input algorithm into special-purpose accelerators through HLS. HeteroCL integrates AutoSA as a compiler backend for mapping systolic algorithms to efficient SA architectures.</td>
             </tr>
           </tbody>
         </table>
